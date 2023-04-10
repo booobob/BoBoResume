@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoBo Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+<header>
+
+    <div class="picture1">
+        <img src="image/back6.png" height="400" width="1030" style="border-radius:1%">
+    </div>
+
+    <div class="picture2">
+        <img src="image/me.png" height="250" width="250" style="border-radius:3%">
+    </div>
+<div class="raw">
+    <div class="name1">
+        <h1>劉又榛</h1>
+    </div>
+    <div class="name2">
+        <h2> BoBo</h2>
+    </div>
+
+    <div class="link">
+
+     <div class="link this">  
+            <a href="https://www.facebook.com/profile.php?id=100007886676941&mibextid=LQQJ4d">
+                <img src="image/fb.png" height="90" width="90">
+            </a>
+     </div>
+
+    <div class="link this">
+            <a href="https://instagram.com/hoann_91?igshid=YmMyMTA2M2Y=">
+                <img src="image/ig.png" hright="100" width="100">
+            </a>
+    </div>
+    <div class="link this">
+            <a href="https://line.me/ti/p/FvFZERbcsk">
+                <img src="image/line.png" hright="100" width="100">
+            </a>
+    </div>
+    <div class="link this">
+            <a href="mailto:jenny92115@gmail.com">
+                <img src="image/gmail.png" hright="100" width="100">
+            </a>
+    </div>
+    </div>
+</div>
+</header>
+
+<nav>
+    <a href="#aboutme" style="color: #f0ead2;">基本資料</a>
+    <a href="#myskill" style="color: #f0ead2;">專業與技能</a>
+    <a href="#exp" style="color: #f0ead2;">經歷</a>
+</nav>
+
+<article>
+    <section class="block1">
+        <div id="aboutme" class="info">
+            <div style="margin-left: 1cm;">
+                Info.<hr><br>
+                <ul class="infotext">
+                    <li>劉又榛&nbsp; YU CHEN-LIU</li><br>
+                    <li>2003/01/15&nbsp;||&nbsp;Capricornus</li><br>
+                    <li>中原大學資訊管理學系&nbsp; Taoyuan</li>
+                </ul>
+            
+            </div>
+        </div>
+        <div class="me">
+            About ME.<hr><br>
+            <div class="metext" style="margin-left: 1.5cm; margin-right: 1.5cm;">
+                &emsp;我是劉又榛，大學同學都叫我Bobo，喜歡的糖果是哈利寶。雖然看起來不像，但我喜歡運動，像是爬山、跑步等等。我的興趣是看小說、聽音樂，還有吃零食。喜歡的小說類型是懸疑推理，音樂和零食一樣，什麼都聽什麼都吃，但我不喜歡芋頭。
+            </div>
+            
+        </div>
+    </section>
+    <section class="block2">
+        <div id="myskill" class="block2_2">
+        |My SKILLS|<br><br><!--會動耶-->
+        </div>
+        <script>
+        window.onload = function test() {
+            move1();
+            move2();
+            move3();
+            move4();
+        }
+        function move1() {
+            var ans = document.getElementById("file1");
+            var value = 1;
+            var num = document.getElementById("schedule1");
+            var id = setInterval(frame, 40);
+            function frame() {
+                if (value >= 80) {
+                    clearInterval(id);
+                }
+                else {
+                    value++;
+                    ans.value = value;
+                    num.innerHTML = value + "%";
+                }
+            }
+        }
+
+        function move2() {
+            var ans = document.getElementById("file2");
+            var value = 1;
+            var id = setInterval(frame, 40);
+            function frame() {
+                if (value >= 70) {
+                    clearInterval(id);
+                }
+                else {
+                    value++;
+                    ans.value = value;
+                }
+            }
+        }
+        function move3() {
+            var ans = document.getElementById("file3");
+            var value = 1;
+            var id = setInterval(frame, 40);
+            function frame() {
+                if (value >= 45) {
+                    clearInterval(id);
+                }
+                else {
+                    value++;
+                    ans.value = value;
+                }
+            }
+        }
+        function move4() {
+            var ans = document.getElementById("file4");
+            var value = 1;
+            var num = document.getElementById("schedule1");
+            var id = setInterval(frame, 40);
+            function frame() {
+                if (value >= 60) {
+                    clearInterval(id);
+                }
+                else {
+                    value++;
+                    ans.value = value;
+                    num.innerHTML = value + "%";
+                }
+            }
+        }
+        </script>
+
+    <div class="array_item">
+        <div class="skill_item">HTML</div>
+        <progress id="file1" max="100" value="1"></progress>
+        <span class="value">80%</span>
+    </div>
+    <div class="array_item">
+        <div class="skill_item">CSS</div>
+        <progress id="file2" max="100" value="1"></progress>
+        <span class="value">70%</span>
+    </div>
+    <div class="array_item">
+        <div class="skill_item">JSP</div>
+        <progress id="file3" max="100" value="1"></progress>
+        <span class="value">45%</span>
+    </div>
+    <div class="array_item">
+        <div class="skill_item">PYTHON</div>
+        <progress id="file4" max="100" value="1"></progress>
+        <span class="value">60%</span>
+    </div>
+        
+    </section>
+    <section class="block3">
+        <div id="exp" class="block2_2">
+            |Experience|<br><br>
+        </div>
+        <div class="etext">
+            課程專案<hr width="143px">
+        </div>
+        <div class="photo1">
+            <div class="item1">
+                <img src="image/picture1.png" height="250" width="300">
+                <span class="project">
+                    企業概論<br><br>是在Qㄛ雪Ｑ餅
+                </span>
+            </div>
+            <div class="item1">
+                <img src="image/picture2.jpg" height="250" width="300">
+                <span class="project">
+                    網路程式設計<br><br>吾toy
+                </span>
+            </div>
+            <div class="item1">
+                <img src="image/picture3.png" height="250" width="300">
+                <span class="project">
+                    Python商業應用<br><br>PAC-Man
+                </span>
+            </div>
+        </div>
+        <center><hr width="60%" style="margin-top: 40px;" ></center>
+        <div class="etext">
+        
+            社團活動<hr width="143px">
+        </div>
+    <div class="array">
+        <div class="photo2">
+            <img src="image/picture5.png" height="430" width="450">
+        </div>
+            <div class="arraytext">
+               <l>登山社</l><br><br>
+               <div class="arraytext2">
+                &emsp;大一的時候參加了登山社，並在2021年和朋友一起去爬合歡山，當天天氣很好，不管走到哪風景都很漂亮。在這兩天一夜的行程中我認識了很多各式各樣的朋友，聽了許多故事。爬山帶給我的感受彷彿遠離了平常的生活，就像忘記所有煩惱，只是單純享受此刻。
+
+               </div>
+               
+            </div>
+            
+    </div>
+    <div class="array">
+        <div class="photo2">
+            <img src="image/picture4.png" height="350" width="450">
+        </div>
+        <div class="arraytext">
+            <l>基層文化服務團<br><br></l>
+            <div class="arraytext2">
+                &emsp; 分別在大一和大二出過兩次營隊，第一次學習當小隊輔、寫企劃書，在過程中常常要解決臨時發生的問題，每次都覺得壓力很大，但也讓我在這些經驗、這些夥伴中學習到課堂不會教的東西。
+            </div>
+            
+
+        </div>
+    </div>
+        <center><hr width="60%" style="margin-top: 60px;" ></center>
+        <div class="etext">
+            學業獎狀<hr width="143px">
+        </div>
+        <div class="photo1">
+            <div class="item3">
+                <img src="image/award2.png" height="270" width="250">
+                <div class="award"><h1>110-2書卷獎</div>
+            </div>
+            <div class="item3">
+                <img src="image/award3.png" height="270" width="250">
+                <div class="award"><h1>專業學科優異獎-資料結構</div>
+            </div>
+            <div class="item3">
+                <img src="image/award.png" height="270" width="250">
+                <div class="award"><h1>111-1書卷獎</div>
+            </div>
+        </div>
+
+            
+    </section>
+</article>
+<footer>
+    <br>
+    Copyright&nbsp;©&nbsp;2023 劉又榛<br>
+    mail:jenny92115@gmail.com
+</footer>
+
+
+</body>
+</html>
